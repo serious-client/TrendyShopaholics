@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "977752964163",
+    "project_id": "trendyshopaholics-230a1",
+    "storage_bucket": "trendyshopaholics-230a1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:977752964163:android:93ca6623bcf62fdf3768f6",
+        "android_client_info": {
+          "package_name": "com.nkechinnaji.trendyshopaholics"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3zbaXtAE9Wl5DKo9ujDjstgANI0820Vk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/black">
+
+   <com.google.android.material.appbar.AppBarLayout
+       android:id="@+id/appbar"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent">
+
+      <androidx.appcompat.widget.Toolbar
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:titleTextColor="@color/white"
+          android:background="#1b5d6a"
+          android:title="Shopaholics"/>
+   </com.google.android.material.appbar.AppBarLayout>
+
+      <include
+          android:id="@+id/document_media_toolbar"
+          app:layout_constraintTop_toBottomOf="@id/appbar"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          layout="@layout/overlay_ui_deep_green" />
+      <ImageView
+          android:id="@+id/homescreen_image"
+          android:layout_width="match_parent"
+          android:layout_height="300dp"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          android:src="@drawable/shopping_woman_1024dp"
+          android:layout_marginTop="70dp"/>
+     />
+
+   <Button
+       android:id="@+id/sales_msg"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:backgroundTint="#c14135"
+       android:layout_margin="24dp"
+       android:text="Sales TODAY!!"
+       app:layout_constraintStart_toStartOf="@id/homescreen_image"
+       app:layout_constraintTop_toBottomOf="@id/homescreen_image"/>
+
+   <Button
+       android:id="@+id/stores_around"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:backgroundTint="#fea935"
+       android:layout_margin="24dp"
+       android:text="Find Stores Around Me"
+       app:layout_constraintStart_toStartOf="@id/sales_msg"
+       app:layout_constraintTop_toBottomOf="@id/sales_msg"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
