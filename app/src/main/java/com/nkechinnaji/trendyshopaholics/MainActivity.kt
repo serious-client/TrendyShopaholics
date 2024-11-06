@@ -27,5 +27,9 @@ class MainActivity : AppCompatActivity() {
         viewBinding.storesAround.setOnClickListener{
             Toast.makeText(this, "Find a store you like!", Toast.LENGTH_LONG).show()
         }
+
+        viewBinding.news.setOnClickListener{
+            Toast.makeText(this, "Get latest news!", Toast.LENGTH_LONG).show()
+        }
     }
 }
